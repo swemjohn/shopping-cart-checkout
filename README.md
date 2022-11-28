@@ -4,10 +4,22 @@
 <p>In our quest to stay in touch with what's going on in the commercial world we've
 decided to open a supermarket - we sell only three products:</p>
 <table>
-<th>Product code Name Price</th>
-<td>FR1 Fruit tea £3.11</td>
-<td>SR1 Strawberries £5.00</td>
-<td>CF1 Coffee £11.23</td>
+<tr><th>Product code </th>
+<th>Name</th>
+<th>Price</th>
+</tr>
+<tr><td>FR1 </td>
+<td>Fruit tea </td>
+<td>£3.11</td>
+</tr>
+<tr><td>SR1 </td>
+<td>Strawberries </td>
+<td>£5.00</td>
+</tr>
+<tr><td>CF1 </td>
+<td>Coffee </td>
+<td>£11.23</td>
+</tr>
 </table>
 
 <p>Our CEO is a big fan of buy-one-get-one-free offers. She wants us to add a rule to
