@@ -3,10 +3,12 @@
 <h2> Problem Description </h2>
 <p>In our quest to stay in touch with what's going on in the commercial world we've
 decided to open a supermarket - we sell only three products:</p>
-Product code Name Price
-FR1 Fruit tea £3.11
-SR1 Strawberries £5.00
-CF1 Coffee £11.23
+<table>
+<th>Product code Name Price</th>
+<td>FR1 Fruit tea £3.11</td>
+<td>SR1 Strawberries £5.00</td>
+<td>CF1 Coffee £11.23</td>
+</table>
 
 <p>Our CEO is a big fan of buy-one-get-one-free offers. She wants us to add a rule to
 apply this rule to fruit tea. </p>
