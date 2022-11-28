@@ -1,5 +1,54 @@
 <h1> Shopping Cart Checkout </h1>
 
+## Installation
+### Prerequisites
+You will need to build on a supporting operating system that runs PHP and libraries.
+
+Requirements to build:
+- PHP 8.1 and above
+- MySQL Database
+- Composer installed
+
+### Step 1 - Install packages
+```bash
+composer install 
+```
+This will install all the packages required.
+
+
+### Step 2 - Setup .env
+Edit your local version of .env, the main point is to connect to MySQL table
+```bash
+cp .env.example .env
+vi .env
+```
+
+The important component is MySQL connection. Please create a database with the database name specified in the .env.
+eg: CREATE DATABASE shopping_cart
+
+### Step 3 - Setup database tables and initial data
+Laravel seeders are used to populate the table data.
+
+```bash
+php artisan migrate 
+php artisan db:seed
+```
+
+### Step 4 - Run tests to verify the build
+
+```bash
+php artisan test 
+```
+This will run the test and verify three test cases.
+
+
+### Step 5 - View and interact with the app
+
+```bash
+php artisan serve 
+```
+The website will usually be available on https://127.0.0.1:8000
+
 <h2> Problem Description </h2>
 <p>In our quest to stay in touch with what's going on in the commercial world we've
 decided to open a supermarket - we sell only three products:</p>
