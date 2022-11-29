@@ -19,7 +19,7 @@ class HomeController extends Controller
         $products = Product::all();
         $total_price = (new CheckoutService($this->pricing_rules))->getTotal();
         $cart = Cart::select('quantity')->count;
-        return view('home', compact('products', 'total_price'));
+        return view('home', compact('products', 'total_price', 'cart'));
     }
 
     public function scan($product_code)
