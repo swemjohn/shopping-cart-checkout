@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Cart;
 use App\Models\Product;
 use App\Services\CheckoutService;
 use Illuminate\Http\Request;
@@ -17,6 +18,7 @@ class HomeController extends Controller
     {
         $products = Product::all();
         $total_price = (new CheckoutService($this->pricing_rules))->getTotal();
+        $cart = Cart::select('quantity')->count;
         return view('home', compact('products', 'total_price'));
     }
 

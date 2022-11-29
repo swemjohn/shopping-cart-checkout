@@ -9,5 +9,5 @@
 
 </ul>
 </body>
-<b>Total: ${{ number_format($total_price, 2)}}</b>
+<b>Total: ${{ number_format($total_price, 2)}} ({{ $cart }})</b>
 </html>
